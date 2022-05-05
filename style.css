@@ -1,0 +1,37 @@
+* {
+	box-sizing: border-box;
+}
+.container {
+	display: grid;
+	grid-template-columns: repeat(4, 100px);
+	justify-content: center;
+	align-content: center;
+}
+.screen {
+	background: #f1f4f8;
+	grid-column: 1 / 5;
+	height: 120px;
+	padding: 20px 30px;
+	border: 1px solid black;
+}
+.button {
+	height: 100px;
+	font-weight: 500;
+	font-family: monospace;
+
+	background: #dcdcdc;
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	border: 1px solid black;
+}
+.button:last-child {
+	grid-column: 3 / span 2;
+}
+.button:hover {
+	background: #bbb8b8;
+	cursor: pointer;
+}
+.button:active {
+	background: #dcdcdc;
+}
